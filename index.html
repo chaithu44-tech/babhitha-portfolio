@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chilaka Babhitha — Aspiring Software Developer | Portfolio</title>
+  <meta
+    name="description"
+    content="Personal portfolio of Chilaka Babhitha, B.Tech student at Jain University and aspiring software developer skilled in Python, Java, FastAPI, and Web Technologies. Participant in Smart India Hackathon (SIH)."
+  />
+  <meta name="author" content="Chilaka Babhitha" />
+  
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Ambient Background Glows -->
+  <div class="ambient-glow ambient-glow--1" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-glow--2" aria-hidden="true"></div>
+
+  <div class="page-frame">
+    <!-- Left Vertical Rail (Editorial Touch) -->
+    <aside class="side-rail side-rail--left" aria-hidden="true">
+      <div class="rail-track">
+        <span class="rail-text">PYTHON • JAVA • FASTAPI</span>
+        <span class="rail-line"></span>
+        <span class="rail-text">JAIN UNIVERSITY • B.TECH</span>
+      </div>
+    </aside>
+
+    <!-- Main Editorial Content Canvas -->
+    <div class="main-canvas">
+      
+      <!-- Top Navigation Bar -->
+      <header class="topbar">
+        <a href="#top" class="topbar-brand" aria-label="Chilaka Babhitha Home">
+          <div class="brand-badge">CB</div>
+          <div class="brand-text">
+            <span class="brand-name">CHILAKA BABHITHA</span>
+            <span class="brand-sub">SOFTWARE DEVELOPER</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="topbar-nav" aria-label="Primary Navigation">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#project">Project</a>
+          <a href="#academics">Education</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <!-- Right Action Items -->
+        <div class="topbar-actions">
+          <!-- Theme Toggle -->
+          <button type="button" class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle dark/light theme" title="Toggle theme">
+            <svg class="sun-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="moon-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+
+          <!-- Resume Modal Trigger -->
+          <button type="button" class="btn-outline-sm" data-open-resume aria-label="Open Digital Resume">
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+            <span>Resume</span>
+          </button>
+
+          <!-- Contact CTA -->
+          <a href="#contact" class="topbar-cta">
+            <span class="status-dot"></span>
+            <span>OPEN TO INTERNSHIPS</span>
+            <span class="arrow" aria-hidden="true">→</span>
+          </a>
+
+          <!-- Mobile Menu Button -->
+          <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </header>
+
+      <!-- Mobile Dropdown Navigation -->
+      <div class="mobile-nav" id="mobileNav" hidden>
+        <nav aria-label="Mobile Navigation">
+          <a href="#about" class="mobile-nav-link">About Me</a>
+          <a href="#skills" class="mobile-nav-link">Technical Skills</a>
+          <a href="#project" class="mobile-nav-link">Featured Project</a>
+          <a href="#academics" class="mobile-nav-link">Education &amp; SIH</a>
+          <a href="#contact" class="mobile-nav-link">Get in Touch</a>
+          <div class="mobile-nav-actions">
+            <button type="button" class="btn-primary-block" data-open-resume>
+              <span>View Full Resume</span>
+              <span aria-hidden="true">↗</span>
+            </button>
+          </div>
+        </nav>
+      </div>
+
+      <!-- ============================================== -->
+      <!-- HERO SECTION -->
+      <!-- ============================================== -->
+      <section id="top" class="hero">
+        <div class="hero-wordmark-wrap">
+          <h1 class="hero-wordmark" aria-label="Portfolio">DEVELOPER</h1>
+        </div>
+
+        <div class="hero-grid">
+          <!-- Left Column: Copy & CTAs -->
+          <div class="hero-intro reveal">
+            <div class="hero-pill-badge">
+              <span class="pulse-indicator"></span>
+              <span>B.Tech Student (2nd Year) • Jain University</span>
+            </div>
+
+            <p class="hero-eyebrow">HELLO, I AM</p>
+            <h2 class="hero-name">
+              CHILAKA<br />
+              <span class="name-gradient">BABHITHA</span>
+            </h2>
+
+            <p class="hero-role-title">
+              <span class="accent-text">Aspiring Software Developer</span> &amp; Problem Solver
+            </p>
+
+            <p class="hero-bio">
+              Motivated B.Tech student passionate about software development, clean system architecture,
+              and practical problem-solving. Building modern backend services with <strong>FastAPI</strong>,
+              robust programming foundations in <strong>Python</strong> &amp; <strong>Java</strong>, and eager
+              to contribute to high-impact engineering teams.
+            </p>
+
+            <!-- Hero Action Buttons -->
+            <div class="hero-actions">
+              <a href="#project" class="btn-primary">
+                <span>Explore Featured Project</span>
+                <span class="arrow-icon" aria-hidden="true">→</span>
+              </a>
+              <button type="button" class="btn-secondary" data-open-resume>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                </svg>
+                <span>Resume Overview</span>
+                <span aria-hidden="true">↗</span>
+              </button>
+            </div>
+
+            <!-- Quick Contacts Row -->
+            <div class="hero-contact-strip">
+              <a href="mailto:chilakababhitha@gmail.com" class="hero-contact-item" title="Send Email">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <span>chilakababhitha@gmail.com</span>
+              </a>
+              <span class="dot-separator">•</span>
+              <a href="tel:7337432621" class="hero-contact-item" title="Call">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                <span>+91 7337432621</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Visual Portrait & Stamp Badge -->
+          <div class="hero-visual reveal">
+            <div class="visual-decor-orb" aria-hidden="true"></div>
+            
+            <!-- Arched Portrait Frame -->
+            <div class="portrait-card">
+              <div class="portrait-arch">
+                <img
+                  src="assets/portrait.png"
+                  alt="Portrait photo of Chilaka Babhitha in formal black blazer"
+                  class="portrait-img"
+                  loading="eager"
+                />
+              </div>
+
+              <!-- Rotating Stamp Badge -->
+              <div class="stamp-badge" aria-label="B.Tech Developer • Jain University • Smart India Hackathon">
+                <svg viewBox="0 0 120 120" class="stamp-ring">
+                  <defs>
+                    <path
+                      id="stampCirclePath"
+                      d="M 60, 60 m -45, 0 a 45,45 0 1,1 90,0 a 45,45 0 1,1 -90,0"
+                    />
+                  </defs>
+                  <text>
+                    <textPath href="#stampCirclePath" startOffset="0%" textLength="280" lengthAdjust="spacing">
+                      • CHILAKA BABHITHA • JAIN UNIVERSITY • SIH PARTICIPANT&#160;
+                    </textPath>
+                  </text>
+                </svg>
+                <div class="stamp-center">
+                  <span class="stamp-kicker">ASPIRING</span>
+                  <span class="stamp-main">S/W DEV</span>
+                </div>
+              </div>
+
+              <!-- Floating Highlight Chip -->
+              <div class="floating-chip">
+                <div class="chip-icon">🚀</div>
+                <div class="chip-info">
+                  <span class="chip-title">Smart India Hackathon</span>
+                  <span class="chip-sub">Participant &amp; Innovator</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Metrics Grid -->
+        <div class="hero-metrics-grid reveal">
+          <div class="metric-card">
+            <span class="metric-val">2nd Year</span>
+            <span class="metric-label">B.Tech Engineering at Jain University</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-val">Python &amp; Java</span>
+            <span class="metric-label">Core Object-Oriented &amp; Scripting Languages</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-val">FastAPI</span>
+            <span class="metric-label">Modern High-Performance REST API Framework</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-val">SIH Participant</span>
+            <span class="metric-label">National Level Innovation &amp; Hackathon Experience</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================== -->
+      <!-- SECTION 2: ABOUT & PERSONAL STRENGTHS -->
+      <!-- ============================================== -->
+      <section id="about" class="section section--about">
+        <div class="section-badge">CAREER OBJECTIVE &amp; PHILOSOPHY</div>
+        
+        <div class="about-grid">
+          <!-- Left: Narrative -->
+          <div class="about-narrative reveal">
+            <h2 class="section-heading">
+              Dedicated to Building Software with <span class="accent-highlight">Clarity &amp; Purpose</span>.
+            </h2>
+            <p class="about-lead">
+              As an aspiring software developer currently in my 2nd year of Bachelor of Technology at Jain University,
+              I am driven by curiosity and the thrill of turning logical ideas into functioning digital solutions.
+            </p>
+            <p class="about-body">
+              My technical journey blends strong algorithmic thinking in <strong>Python</strong> and <strong>Java</strong>
+              with practical modern development using <strong>FastAPI</strong> and Web technologies. I am committed
+              to learning continuously, writing clean and maintainable code, and contributing proactively to meaningful,
+              real-world software products through internships and collaborative engineering environments.
+            </p>
+
+            <div class="about-quote-box">
+              <div class="quote-mark">“</div>
+              <p class="quote-text">
+                Eager to strengthen technical skills, contribute to meaningful projects, and gain hands-on experience through learning opportunities and internships.
+              </p>
+              <span class="quote-author">— Chilaka Babhitha, Career Objective</span>
+            </div>
+          </div>
+
+          <!-- Right: 3 Core Personal Strengths (From Resume) -->
+          <div class="strengths-wrapper reveal">
+            <h3 class="strengths-title">Core Personal Strengths</h3>
+            <p class="strengths-sub">Key personal attributes recognized by mentors, peers, and hackathon teammates:</p>
+
+            <div class="strengths-cards">
+              <!-- Strength 1 -->
+              <div class="strength-card">
+                <div class="strength-icon-box strength-icon--teal">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                  </svg>
+                </div>
+                <div class="strength-content">
+                  <h4>Willingness to Learn</h4>
+                  <p>
+                    A continuous growth mindset. Rapidly internalizes new programming paradigms,
+                    explores frameworks like FastAPI, and actively seeks out feedback to improve craft.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Strength 2 -->
+              <div class="strength-card">
+                <div class="strength-icon-box strength-icon--navy">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                    <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                  </svg>
+                </div>
+                <div class="strength-content">
+                  <h4>Problem-Solving Mindset</h4>
+                  <p>
+                    Approaches challenges with structured, analytical clarity. Breaks down complex
+                    requirements into modular components, handles edge cases, and writes resilient logic.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Strength 3 -->
+              <div class="strength-card">
+                <div class="strength-icon-box strength-icon--indigo">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                </div>
+                <div class="strength-content">
+                  <h4>Team Collaboration</h4>
+                  <p>
+                    Thrives in group sprints and hackathon environments like the Smart India Hackathon.
+                    Values open communication, empathetic peer support, and collective goal achievement.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================== -->
+      <!-- SECTION 3: TECHNICAL SKILLS & TOOLKIT -->
+      <!-- ============================================== -->
+      <section id="skills" class="section section--skills">
+        <div class="section-header reveal">
+          <div class="section-badge">TECHNICAL EXPERTISE</div>
+          <h2 class="section-heading">
+            Toolkit &amp; Technical Capabilities
+          </h2>
+          <p class="section-subtitle">
+            Focused on robust foundational languages, modern asynchronous web services, and reliable engineering practices.
+          </p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="skills-filter-row reveal">
+          <button type="button" class="filter-tab is-active" data-filter="all">All Skills</button>
+          <button type="button" class="filter-tab" data-filter="languages">Programming</button>
+          <button type="button" class="filter-tab" data-filter="frameworks">Backend &amp; Frameworks</button>
+          <button type="button" class="filter-tab" data-filter="web">Web &amp; Core</button>
+        </div>
+
+        <!-- Skills Grid -->
+        <div class="skills-grid reveal">
+          <!-- Python -->
+          <div class="skill-card" data-category="languages">
+            <div class="skill-header">
+              <div class="skill-icon-wrap skill-icon-wrap--python">
+                <code>Py</code>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">Python</h3>
+                <span class="skill-tag">Primary Language</span>
+              </div>
+            </div>
+            <p class="skill-desc">
+              Strong mastery of Python syntax, object-oriented concepts, data structures, scripting, and backend development.
+            </p>
+            <div class="skill-tags-list">
+              <span>Data Structures</span>
+              <span>OOP</span>
+              <span>Backend Scripting</span>
+              <span>API Integration</span>
+            </div>
+          </div>
+
+          <!-- Java -->
+          <div class="skill-card" data-category="languages">
+            <div class="skill-header">
+              <div class="skill-icon-wrap skill-icon-wrap--java">
+                <code>Ja</code>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">Java</h3>
+                <span class="skill-tag">Object-Oriented Core</span>
+              </div>
+            </div>
+            <p class="skill-desc">
+              Academic and practical foundation in Java, inheritance, polymorphism, abstract classes, collections, and algorithms.
+            </p>
+            <div class="skill-tags-list">
+              <span>Core Java</span>
+              <span>OOP Concepts</span>
+              <span>Collections</span>
+              <span>Algorithms</span>
+            </div>
+          </div>
+
+          <!-- FastAPI -->
+          <div class="skill-card" data-category="frameworks">
+            <div class="skill-header">
+              <div class="skill-icon-wrap skill-icon-wrap--fastapi">
+                <code>API</code>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">FastAPI</h3>
+                <span class="skill-tag">Web Framework</span>
+              </div>
+            </div>
+            <p class="skill-desc">
+              Developing high-performance asynchronous REST endpoints, JSON payload validation with Pydantic, and automatic Swagger docs.
+            </p>
+            <div class="skill-tags-list">
+              <span>REST APIs</span>
+              <span>Pydantic Models</span>
+              <span>Async Routing</span>
+              <span>Swagger/OpenAPI</span>
+            </div>
+          </div>
+
+          <!-- HTML5 & Web Tech -->
+          <div class="skill-card" data-category="web">
+            <div class="skill-header">
+              <div class="skill-icon-wrap skill-icon-wrap--html">
+                <code>&lt;/&gt;</code>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">HTML &amp; Web Standards</h3>
+                <span class="skill-tag">Frontend &amp; UI</span>
+              </div>
+            </div>
+            <p class="skill-desc">
+              Building semantic, accessible web structures, modern DOM layouts, responsive styling, and clean user interfaces.
+            </p>
+            <div class="skill-tags-list">
+              <span>Semantic HTML5</span>
+              <span>Responsive Design</span>
+              <span>Accessibility</span>
+              <span>CSS Flex/Grid</span>
+            </div>
+          </div>
+
+          <!-- RESTful Architecture -->
+          <div class="skill-card" data-category="frameworks">
+            <div class="skill-header">
+              <div class="skill-icon-wrap skill-icon-wrap--arch">
+                <code>REST</code>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">RESTful API Design</h3>
+                <span class="skill-tag">Architecture</span>
+              </div>
+            </div>
+            <p class="skill-desc">
+              Structuring CRUD endpoints, status code handling, response schemas, and connecting client applications with backend logic.
+            </p>
+            <div class="skill-tags-list">
+              <span>CRUD Endpoints</span>
+              <span>JSON Schemas</span>
+              <span>Error Handling</span>
+              <span>HTTP Methods</span>
+            </div>
+          </div>
+
+          <!-- Git & Software Practices -->
+          <div class="skill-card" data-category="web">
+            <div class="skill-header">
+              <div class="skill-icon-wrap skill-icon-wrap--tools">
+                <code>GIT</code>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">Git &amp; Developer Tools</h3>
+                <span class="skill-tag">Workflow</span>
+              </div>
+            </div>
+            <p class="skill-desc">
+              Version control management, repository synchronization, feature branching, code inspection, and VS Code workflows.
+            </p>
+            <div class="skill-tags-list">
+              <span>Git &amp; GitHub</span>
+              <span>Version Control</span>
+              <span>VS Code</span>
+              <span>Code Debugging</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================== -->
+      <!-- SECTION 4: FEATURED PROJECT (STUDENT GAP ANALYSER) -->
+      <!-- ============================================== -->
+      <section id="project" class="section section--project">
+        <div class="section-header reveal">
+          <div class="section-badge">FEATURED ACADEMIC PROJECT</div>
+          <h2 class="section-heading">
+            Student Gap Analyser
+          </h2>
+          <p class="section-subtitle">
+            An intelligent academic evaluation system designed to detect, diagnose, and bridge conceptual learning gaps among students through automated analysis and personalized remediation.
+          </p>
+        </div>
+
+        <div class="project-showcase reveal">
+          <!-- Left: Big Feature Overview & Architecture -->
+          <div class="project-main-card">
+            <div class="project-pill-row">
+              <span class="badge-status">Academic Initiative</span>
+              <span class="badge-tech">Python • FastAPI • Web Technologies</span>
+              <span class="badge-role">Core Developer</span>
+            </div>
+
+            <h3 class="project-headline">
+              Transforming Student Assessment into Actionable Learning Roadmaps
+            </h3>
+
+            <p class="project-summary-text">
+              Traditional exams only provide aggregate marks, leaving students unaware of which specific concepts or subtopics they failed to grasp.
+              <strong>Student Gap Analyser</strong> addresses this by tracking granular question-level responses, mapping them to taxonomy competencies,
+              and generating automated diagnostic heatmaps for students and instructors.
+            </p>
+
+            <!-- 4 Architecture Modules Grid -->
+            <div class="project-modules-grid">
+              <div class="p-module-item">
+                <div class="p-module-num">01</div>
+                <div class="p-module-body">
+                  <h4>Diagnostic Assessment Engine</h4>
+                  <p>Evaluates subject quizzes across foundational and applied topics with weighted difficulty tags.</p>
+                </div>
+              </div>
+
+              <div class="p-module-item">
+                <div class="p-module-num">02</div>
+                <div class="p-module-body">
+                  <h4>Concept Gap Matrix</h4>
+                  <p>Computes gap percentages by topic (e.g., Recursion, Memory, API routing) to pinpoint friction areas.</p>
+                </div>
+              </div>
+
+              <div class="p-module-item">
+                <div class="p-module-num">03</div>
+                <div class="p-module-body">
+                  <h4>FastAPI Backend Service</h4>
+                  <p>High-speed asynchronous REST endpoints to submit assessments, retrieve analytics, and manage records.</p>
+                </div>
+              </div>
+
+              <div class="p-module-item">
+                <div class="p-module-num">04</div>
+                <div class="p-module-body">
+                  <h4>Personalized Remedial Path</h4>
+                  <p>Generates targeted practice recommendations, curated articles, and milestone practice challenges.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-actions-row">
+              <button type="button" class="btn-primary" data-open-project="0">
+                <span>View Full Architecture &amp; Case Study</span>
+                <span class="arrow-icon" aria-hidden="true">→</span>
+              </button>
+              <button type="button" class="btn-outline" data-open-resume>
+                <span>View Project on Resume</span>
+                <span aria-hidden="true">↗</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Live Simulation Widget -->
+          <div class="project-widget-card">
+            <div class="widget-header">
+              <div class="widget-dot-row">
+                <span class="w-dot red"></span>
+                <span class="w-dot yellow"></span>
+                <span class="w-dot green"></span>
+              </div>
+              <span class="widget-title">Live Simulator • Student Gap Analyser</span>
+            </div>
+
+            <div class="widget-body">
+              <p class="widget-instruction">
+                Select a subject area to simulate how the <strong>Student Gap Analyser</strong> computes diagnostic scores and recommends targeted remedies:
+              </p>
+
+              <!-- Topic Selector Buttons -->
+              <div class="demo-selector-group" id="demoTopicSelector">
+                <button type="button" class="demo-chip is-active" data-topic="python">Python &amp; OOP</button>
+                <button type="button" class="demo-chip" data-topic="fastapi">FastAPI &amp; REST</button>
+                <button type="button" class="demo-chip" data-topic="java">Java Fundamentals</button>
+              </div>
+
+              <!-- Diagnostic Result Display Box -->
+              <div class="demo-result-box" id="demoResultBox">
+                <div class="demo-score-row">
+                  <div>
+                    <span class="demo-score-label">Identified Mastery</span>
+                    <div class="demo-score-val" id="demoScoreVal">82%</div>
+                  </div>
+                  <div class="demo-status-tag" id="demoStatusTag">Moderate Gap Detected</div>
+                </div>
+
+                <!-- Progress Bar -->
+                <div class="demo-meter-track">
+                  <div class="demo-meter-fill" id="demoMeterFill" style="width: 82%;"></div>
+                </div>
+
+                <!-- Granular Gap Breakdown -->
+                <div class="demo-breakdown">
+                  <div class="breakdown-item">
+                    <span class="b-label">Strong Area:</span>
+                    <span class="b-val strong" id="demoStrongArea">Syntax &amp; Flow Control</span>
+                  </div>
+                  <div class="breakdown-item">
+                    <span class="b-label">Diagnosed Gap:</span>
+                    <span class="b-val gap" id="demoGapArea">List Comprehensions &amp; Recursion</span>
+                  </div>
+                  <div class="breakdown-item">
+                    <span class="b-label">Actionable Path:</span>
+                    <span class="b-val path" id="demoRemedy">Complete 4 targeted recursion trace exercises</span>
+                  </div>
+                </div>
+
+                <div class="demo-api-badge">
+                  <code>GET /api/v1/students/{id}/gap-analysis?subject=python</code>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================== -->
+      <!-- SECTION 5: EDUCATION & ACHIEVEMENTS -->
+      <!-- ============================================== -->
+      <section id="academics" class="section section--academics">
+        <div class="section-badge">ACADEMIC &amp; COMPETITIVE HIGHLIGHTS</div>
+        <h2 class="section-heading reveal">
+          Education &amp; Achievements
+        </h2>
+        <p class="section-subtitle reveal">
+          Grounded in foundational engineering coursework, hackathon problem-solving, and continuous technical exploration.
+        </p>
+
+        <div class="academics-grid reveal">
+          <!-- Achievement: Smart India Hackathon (SIH) -->
+          <div class="academic-card academic-card--highlight">
+            <div class="card-glow" aria-hidden="true"></div>
+            <div class="academic-tag">NATIONAL HACKATHON</div>
+            
+            <div class="academic-header-group">
+              <div class="achievement-icon-badge">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+              </div>
+              <div>
+                <h3 class="academic-title">Smart India Hackathon (SIH)</h3>
+                <span class="academic-subtitle">Participant &amp; Solution Contributor</span>
+              </div>
+            </div>
+
+            <p class="academic-desc">
+              Participated in the prestigious <strong>Smart India Hackathon (SIH)</strong>, one of India's biggest nationwide hackathons.
+              Collaborated in team ideation, rapid problem decomposition, and presenting software concepts tailored to solve real socio-technological problem statements.
+            </p>
+
+            <ul class="achievement-bullet-list">
+              <li>Formulated innovative technical approaches under strict project constraints.</li>
+              <li>Strengthened team collaboration, communication, and agile iterative development.</li>
+              <li>Demonstrated adaptability and willingness to tackle unfamiliar technical domains.</li>
+            </ul>
+          </div>
+
+          <!-- Education: Jain University -->
+          <div class="academic-card">
+            <div class="academic-tag">UNIVERSITY DEGREE</div>
+            
+            <div class="academic-header-group">
+              <div class="university-icon-badge">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="academic-title">Bachelor of Technology (B.Tech)</h3>
+                <span class="academic-subtitle">Jain University • 2nd Year (Ongoing)</span>
+              </div>
+            </div>
+
+            <p class="academic-desc">
+              Pursuing undergraduate engineering with an emphasis on computer programming, software methodologies,
+              and systems problem solving. Actively applying classroom theory to hands-on software projects.
+            </p>
+
+            <div class="coursework-tags">
+              <span class="c-tag">Python Programming</span>
+              <span class="c-tag">Java &amp; OOP</span>
+              <span class="c-tag">Data Structures</span>
+              <span class="c-tag">Web Technologies</span>
+              <span class="c-tag">Software Engineering</span>
+            </div>
+
+            <div class="education-footer">
+              <span class="status-indicator-inline">🟢 Current Academic Standing: 2nd Year</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================== -->
+      <!-- SECTION 6: CONTACT & INQUIRY -->
+      <!-- ============================================== -->
+      <section id="contact" class="section section--contact">
+        <div class="section-badge">LET'S CONNECT</div>
+        <h2 class="section-heading reveal">
+          Get in Touch for Opportunities
+        </h2>
+        <p class="section-subtitle reveal">
+          I am actively seeking software development internships and collaborative technical opportunities. Feel free to reach out directly!
+        </p>
+
+        <div class="contact-card-grid reveal">
+          <!-- Left: Direct Info & Quick Copy -->
+          <div class="contact-info-panel">
+            <h3 class="contact-panel-title">Direct Contact Channels</h3>
+            <p class="contact-panel-sub">
+              Always open to discussing internships, student projects, or developer collaborations:
+            </p>
+
+            <!-- Email Card -->
+            <div class="contact-method-card">
+              <div class="method-icon-wrap">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="method-details">
+                <span class="method-label">Email Address</span>
+                <a href="mailto:chilakababhitha@gmail.com" class="method-link">chilakababhitha@gmail.com</a>
+              </div>
+              <button type="button" class="btn-copy" id="copyEmailBtn" aria-label="Copy Email Address" title="Copy to clipboard">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+                <span>Copy</span>
+              </button>
+            </div>
+
+            <!-- Phone Card -->
+            <div class="contact-method-card">
+              <div class="method-icon-wrap">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <div class="method-details">
+                <span class="method-label">Phone Number</span>
+                <a href="tel:7337432621" class="method-link">+91 7337432621</a>
+              </div>
+              <a href="tel:7337432621" class="btn-call" aria-label="Call Direct">
+                <span>Call</span>
+              </a>
+            </div>
+
+            <!-- Location Card -->
+            <div class="contact-method-card">
+              <div class="method-icon-wrap">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="method-details">
+                <span class="method-label">Campus / Location</span>
+                <span class="method-text">Jain University, Bengaluru, Karnataka, India</span>
+              </div>
+            </div>
+
+            <!-- QR Code Scan Box -->
+            <div class="qr-box">
+              <div class="qr-image-wrapper">
+                <img src="assets/qr-contact.svg" alt="Scan QR Code to Email Chilaka Babhitha" class="qr-img" width="110" height="110" />
+              </div>
+              <div class="qr-text-side">
+                <h4>Quick Mobile Scan</h4>
+                <p>Scan with your phone camera to draft an email directly to Chilaka Babhitha.</p>
+                <span class="qr-sub">chilakababhitha@gmail.com</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Send Message Form -->
+          <div class="contact-form-panel">
+            <h3 class="contact-panel-title">Send a Direct Message</h3>
+            <p class="contact-panel-sub">
+              Have an internship opening, inquiry, or project idea? Send a quick message below:
+            </p>
+
+            <form id="contactForm" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="senderName">Your Name</label>
+                <input type="text" id="senderName" name="name" required placeholder="e.g. John Doe / Recruiter Name" />
+                <span class="form-error" id="nameError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="senderEmail">Your Email</label>
+                <input type="email" id="senderEmail" name="email" required placeholder="e.g. name@company.com" />
+                <span class="form-error" id="emailError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="senderSubject">Subject / Role</label>
+                <input type="text" id="senderSubject" name="subject" required placeholder="e.g. Software Development Internship Opportunity" />
+              </div>
+
+              <div class="form-group">
+                <label for="senderMessage">Message</label>
+                <textarea id="senderMessage" name="message" rows="4" required placeholder="Hi Babhitha, I came across your portfolio and would love to connect regarding..."></textarea>
+                <span class="form-error" id="messageError"></span>
+              </div>
+
+              <button type="submit" class="btn-primary-block" id="formSubmitBtn">
+                <span>Send Message</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+
+              <div class="form-feedback" id="formFeedback" hidden></div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-inner">
+          <div class="footer-left">
+            <div class="footer-brand">CHILAKA BABHITHA</div>
+            <p class="footer-sub">B.Tech Student &bull; Jain University &bull; Aspiring Software Developer</p>
+          </div>
+
+          <div class="footer-links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#project">Project</a>
+            <a href="#academics">Education</a>
+            <button type="button" class="footer-link-btn" data-open-resume>Resume</button>
+          </div>
+
+          <div class="footer-right">
+            <a href="#top" class="back-to-top" aria-label="Back to top of page">
+              <span>Back to Top</span>
+              <span aria-hidden="true">↑</span>
+            </a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; <span id="currentYear">2026</span> Chilaka Babhitha. All rights reserved. References available upon request.</p>
+        </div>
+      </footer>
+
+    </div><!-- /main-canvas -->
+
+    <!-- Right Vertical Rail (Editorial Accent) -->
+    <aside class="side-rail side-rail--right" aria-hidden="true">
+      <div class="rail-track">
+        <span class="rail-text">SMART INDIA HACKATHON PARTICIPANT</span>
+        <span class="rail-line"></span>
+        <span class="rail-text">STUDENT GAP ANALYSER</span>
+      </div>
+    </aside>
+  </div><!-- /page-frame -->
+
+  <!-- ============================================== -->
+  <!-- MODAL 1: STUDENT GAP ANALYSER CASE STUDY -->
+  <!-- ============================================== -->
+  <div class="modal-backdrop" id="projectModal" hidden role="dialog" aria-modal="true" aria-labelledby="projModalTitle">
+    <div class="modal-window">
+      <div class="modal-header">
+        <div>
+          <span class="modal-kicker">FEATURED ACADEMIC PROJECT CASE STUDY</span>
+          <h2 id="projModalTitle" class="modal-title">Student Gap Analyser</h2>
+        </div>
+        <button type="button" class="modal-close-btn" data-close-modal aria-label="Close Case Study Modal">✕</button>
+      </div>
+
+      <!-- Tab Navigation -->
+      <div class="modal-nav-tabs" role="tablist">
+        <button type="button" class="modal-tab is-active" data-tab="0" role="tab">01 • Problem &amp; Goals</button>
+        <button type="button" class="modal-tab" data-tab="1" role="tab">02 • Tech Stack &amp; Architecture</button>
+        <button type="button" class="modal-tab" data-tab="2" role="tab">03 • FastAPI REST Endpoints</button>
+        <button type="button" class="modal-tab" data-tab="3" role="tab">04 • Gap Metrics &amp; Roadmaps</button>
+      </div>
+
+      <div class="modal-body" id="modalTabDetail">
+        <!-- Injected via JavaScript -->
+      </div>
+
+      <div class="modal-footer">
+        <span class="modal-footer-note">Built with Python, FastAPI, HTML, and Analytical Gap Modeling</span>
+        <button type="button" class="btn-secondary-sm" data-close-modal>Close Preview</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================== -->
+  <!-- MODAL 2: DIGITAL RESUME OVERVIEW (PRINT READY) -->
+  <!-- ============================================== -->
+  <div class="modal-backdrop" id="resumeModal" hidden role="dialog" aria-modal="true" aria-labelledby="resumeModalTitle">
+    <div class="modal-window modal-window--resume">
+      <div class="modal-header">
+        <div>
+          <span class="modal-kicker">CURRICULUM VITAE</span>
+          <h2 id="resumeModalTitle" class="modal-title">Chilaka Babhitha — Executive Resume</h2>
+        </div>
+        <div class="modal-header-actions">
+          <button type="button" class="btn-primary-sm" onclick="window.print()">
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="6 9 6 2 18 2 18 9"></polyline>
+              <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+              <rect x="6" y="14" width="12" height="8"></rect>
+            </svg>
+            <span>Print / Save as PDF</span>
+          </button>
+          <button type="button" class="modal-close-btn" data-close-modal aria-label="Close Resume Modal">✕</button>
+        </div>
+      </div>
+
+      <!-- Printable Resume Body (Styled after user reference) -->
+      <div class="modal-body printable-resume" id="printableResumeArea">
+        
+        <!-- Resume Header -->
+        <div class="cv-header">
+          <div class="cv-header-left">
+            <h1 class="cv-name">CHILAKA BABHITHA</h1>
+            <p class="cv-title">B.Tech Student | Aspiring Software Developer</p>
+            <div class="cv-contact-row">
+              <span>📞 7337432621</span>
+              <span class="cv-sep">|</span>
+              <span>✉️ chilakababhitha@gmail.com</span>
+              <span class="cv-sep">|</span>
+              <span>📍 Jain University, Bengaluru</span>
+            </div>
+          </div>
+          <div class="cv-header-right">
+            <img src="assets/portrait.png" alt="Chilaka Babhitha photo" class="cv-avatar" />
+          </div>
+        </div>
+
+        <div class="cv-divider"></div>
+
+        <!-- Two Column Layout -->
+        <div class="cv-grid">
+          <!-- Left Column -->
+          <div class="cv-col-main">
+            <!-- Career Objective -->
+            <section class="cv-section">
+              <h2 class="cv-section-title">CAREER OBJECTIVE</h2>
+              <p class="cv-text">
+                Motivated B.Tech student with an interest in software development and practical problem-solving.
+                Eager to strengthen technical skills, contribute to meaningful projects, and gain hands-on experience through learning opportunities and internships.
+              </p>
+            </section>
+
+            <!-- Education -->
+            <section class="cv-section">
+              <h2 class="cv-section-title">EDUCATION</h2>
+              <div class="cv-item">
+                <div class="cv-item-header">
+                  <strong>Bachelor of Technology (B.Tech)</strong>
+                  <span class="cv-item-date">2nd Year (Ongoing)</span>
+                </div>
+                <div class="cv-item-sub">Jain University, Bengaluru</div>
+                <p class="cv-subtext">Coursework: Data Structures, Object-Oriented Programming, Web Technologies, Database Concepts.</p>
+              </div>
+            </section>
+
+            <!-- Projects -->
+            <section class="cv-section">
+              <h2 class="cv-section-title">PROJECT</h2>
+              <div class="cv-item">
+                <div class="cv-item-header">
+                  <strong>Student Gap Analyser</strong>
+                  <span class="cv-item-tag">Python • FastAPI • Web</span>
+                </div>
+                <p class="cv-text">
+                  Academic project focused on identifying learning gaps among students. Formulates diagnostic quizzes,
+                  computes topic-wise comprehension deficiencies, and provides targeted remedial recommendations.
+                  Built using Python and FastAPI backend services.
+                </p>
+              </div>
+            </section>
+
+            <!-- Achievements & Activities -->
+            <section class="cv-section">
+              <h2 class="cv-section-title">ACHIEVEMENTS &amp; ACTIVITIES</h2>
+              <ul class="cv-bullets">
+                <li><strong>Participated in SIH (Smart India Hackathon):</strong> Contributed to team problem-solving, rapid prototyping, and software solution modeling on a national platform.</li>
+              </ul>
+            </section>
+          </div>
+
+          <!-- Right Column -->
+          <div class="cv-col-side">
+            <!-- Technical Skills -->
+            <section class="cv-section">
+              <h2 class="cv-section-title">TECHNICAL SKILLS</h2>
+              
+              <div class="cv-skill-group">
+                <span class="cv-skill-cat">Programming:</span>
+                <span class="cv-skill-val">Python, Java</span>
+              </div>
+
+              <div class="cv-skill-group">
+                <span class="cv-skill-cat">Web Technologies:</span>
+                <span class="cv-skill-val">HTML, CSS, Web Standards</span>
+              </div>
+
+              <div class="cv-skill-group">
+                <span class="cv-skill-cat">Framework:</span>
+                <span class="cv-skill-val">FastAPI (REST APIs, Pydantic)</span>
+              </div>
+
+              <div class="cv-skill-group">
+                <span class="cv-skill-cat">Tools &amp; VCS:</span>
+                <span class="cv-skill-val">Git, GitHub, VS Code</span>
+              </div>
+            </section>
+
+            <!-- Personal Strengths -->
+            <section class="cv-section">
+              <h2 class="cv-section-title">PERSONAL STRENGTHS</h2>
+              <ul class="cv-bullets">
+                <li>Willingness to learn</li>
+                <li>Problem-solving mindset</li>
+                <li>Team collaboration</li>
+                <li>Active adaptability</li>
+              </ul>
+            </section>
+
+            <!-- References -->
+            <section class="cv-section">
+              <h2 class="cv-section-title">REFERENCES</h2>
+              <p class="cv-subtext">References available upon request.</p>
+            </section>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="modal-footer">
+        <span class="modal-footer-note">Generated for Chilaka Babhitha &bull; Jain University</span>
+        <button type="button" class="btn-secondary-sm" data-close-modal>Close Window</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-notification" id="toastNotification" hidden role="alert" aria-live="polite"></div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
